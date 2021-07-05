@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ToDoList" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="DefaultText" parent="Theme.ToDoList">
+        <item name="fontFamily">@font/primary_regular</item>
+    </style>
+
+    <style name="header" parent="DefaultText">
+        <item name="fontFamily">@font/primary_bold</item>
+    </style>
+
+    <style name="h1" parent="header">
+        <item name="android:textSize">18sp</item>
+
+    </style>
+
+    <style name="h2" parent="header">
+        <item name="android:textSize">16sp</item>
+
+    </style>
+
+    <style name="h3" parent="header">
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+    <style name="p" parent="DefaultText">
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+    <style name="PrimaryButton" parent="Theme.ToDoList">
+        <item name="fontFamily">@font/primary_black</item>
+    </style>
+
+    <style name="OutlineButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="fontFamily">@font/primary_black</item>
+        <item name="android:textColor">@color/defaultTextColor</item>
+    </style>
+
+    <style name="SecondaryButton" parent="Theme.ToDoList">
+        <item name="backgroundTint">@color/secondaryButtonBackgroundTint</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
+        <item name="iconTint">@color/secondaryIconColor</item>
+        <item name="fontFamily">@font/primary_bold</item>
+        <item name="rippleColor">@color/secondaryIconColor</item>
+    </style>
+</resources>
